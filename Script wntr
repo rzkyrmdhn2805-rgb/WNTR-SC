@@ -1,0 +1,132 @@
+_G.FishItConfig = _G.FishItConfig or {
+    ["Fishing"] = {
+        ["Auto Perfect"] = true,
+        ["Auto Favorite"] = true,
+        ["Fish Name"] = {
+            "Sacred Guardian Squid",
+        },
+        ["Auto Accept Trade"] = true,
+    },
+    ["Auto Trade"] = {
+        ["Enabled"] = true,
+        ["Whitelist Username"] = {"PURSKLEPER24"},
+        ["Category Fish"] = { -- Only Select one, fill in the fish category or fish name
+            "Secret",
+        },
+        ["Fish Name"] = {
+        },
+    },
+    ["Farm Coin Only"] = {
+        ["Enabled"] = false, -- Farm coins only [ cant buy rod, bait, enchant, weather ]
+        ["Target"] = 190000,
+    },
+    ["Selling"] = {
+        ["Auto Sell"] = true,
+        ["Auto Sell Threshold"] = "Legendary",
+        ["Auto Sell Every"] = 100,
+    },
+    ["Doing Quest"] = {
+        ["Auto Ghostfinn Rod"] = false,
+        ["Auto Element Rod"] = false,
+        ["Unlock Ancient Ruin"] = false,
+        ["Allowed Sacrifice"] = {
+            "Blob Shark",
+            "Ghost Shark",
+        },
+        ["FARM_LOC_SECRET_SACRIFICE"] = "Ocean",
+
+        ["Minimum Rod"] = "Astral Rod",
+    },
+    ["WebHook"] = {
+        ["Link Webhook"] = "https://discord.com/api/webhooks/1446221646670074110/yvfHc3Bq9hCiEOmALx-gB6AfMEjxE8dg2u2xjhWN9wOuTkdJKueCdcnpG2Ltfr6nkktl",
+        ["Auto Sending"] = true,
+        ["Category"] = {"Secret"},
+
+        ["Link Webhook Quest Complete"] = "https://discord.com/api/webhooks/1452891279678636083/W8VJY20ZMNrF80Md3cqPNQ9h7YA6ZvqA0QkVCVKTCUwZBetTmONkMr7mq2VJ1Fo94NLO",
+    },
+    ["Weather"] = {
+        ["Auto Buying"] = true,
+        ["Minimum Rod"] = "Astral Rod",
+        ["Weather List"] = {
+            "Wind",
+            "Storm",
+            "Snow",
+            "Radiant",
+        },
+    },
+    ["Potions"] = {
+        ["Auto Use"] = true,
+        ["Minimum Rod"] = "Astral Rod",
+    },
+    ["Event"] = {
+        ["Start Farm"] = false,
+        ["Minimum Rod"] = "Ghostfinn Rod",
+        ["Event List"] = {
+            ["Christmas Cave"] = false,
+            "Megalodon Hunt",
+            "Ghost Shark Hunt",
+            "Shark Hunt",
+        },
+    },
+    ["Enchant"] = {
+        ["Auto Enchant"] = true,
+        ["Roll Enchant"] = false,
+        ["Enchant List"] = {
+            "Reeler I",
+            "Mutation Hunter II",
+            "Big Hunter I",
+        },
+        ["Second Enchant"] = false,
+        ["Allowed Sacrifice"] = {
+            "Blob Shark",
+            "Cryoshade Glider",
+        },
+        ["Second Enchant List"] = {
+            "Reeler I",
+            "Big Hunter I",
+            "Mutation Hunter II",
+        },
+        ["Minimum Rod"] = "Ghostfinn Rod",
+    },
+    ["Bait List"] = {
+        ["Auto Buying"] = true,
+        ["Buy List"] = {
+            "Midnight Bait",
+            "Chroma Bait",
+            "Corrupt Bait",
+            "Aether Bait",
+        },
+    },
+    ["Rod List"] = {
+        ["Auto Buying"] = true,
+        ["Buy List"] = {
+            "Grass Rod",
+            "Midnight Rod",
+            "Astral Rod",
+            "Ares Rod",
+            "Angler Rod",
+        },
+        ["Location Rods"] = { -- Farm location and minimum rod to start on that location, also only 1 rod and only 1 location
+            ["Fisherman Island"] = {"Starter Rod"},
+            ["Kohana Volcano"] = {"Grass Rod", "Midnight Rod"},
+            ["Tropical Grove"] = {"Astral Rod"},
+            ["Sisyphus Statue"] = {"Element Rod", "Ghostfinn Rod", "Angler Rod", "Ares Rod"},
+        },
+    },
+
+    ["ExtremeFpsBoost"] = true,
+    ["UltimatePerformance"] = false,
+    ["Disable3DRender"] = false,
+    ["AutoRemovePlayer"] = true,
+
+    ["AutoReconnect"] = true,
+    ["HideGUI"] = false,
+    ["Debug"] = false,
+    ["EXIT_MAP_IF_DISCONNECT"] = false,
+}
+
+script_key="05B6FEA09A4200BAFE415358E2D4600B";
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/roblog/refs/heads/main/fishit-78c86024ea87c8eca577549807421962.lua"))()
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/list/refs/heads/main/game"))()
