@@ -124,9 +124,3 @@ _G.FishItConfig = _G.FishItConfig or {
     ["Debug"] = false,
     ["EXIT_MAP_IF_DISCONNECT"] = false,
 }
-
-script_key="05B6FEA09A4200BAFE415358E2D4600B";
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/roblog/refs/heads/main/fishit-78c86024ea87c8eca577549807421962.lua"))()
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/FnDXueyi/list/refs/heads/main/game"))()
